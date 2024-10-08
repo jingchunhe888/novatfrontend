@@ -1,0 +1,332 @@
+@use "utils" as *;
+@use "global" as *;
+
+.untitled-page {
+  &.mainContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255 255 255);
+  }
+
+  .contentWrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1440px;
+    background-color: rgb(255 255 255);
+  }
+
+  .contentColumn {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto 37px;
+    width: 1125.0703125px;
+    max-width: 85%;
+  }
+
+  .titleContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(245 245 245);
+    border-color: rgb(217 217 217);
+    border-style: solid;
+    border-width: 0 0 1px;
+  }
+
+  .brandTitle {
+    display: flex;
+    align-items: center;
+    margin: 32px 0 32px 32px;
+    width: 66.99609375px;
+    max-width: 85%;
+    font: 600 24px/1.2 Inter, Helvetica, Arial, serif;
+    color: rgb(0 0 0);
+    letter-spacing: -0.48px;
+
+    @include md {
+      font-size: 22px;
+    }
+
+    @include xs {
+      margin: 32px 0 32px 16px;
+    }
+
+    @include xxs {
+      font-size: 20px;
+    }
+
+    @include tn {
+      margin: 32px 0 32px 8px;
+    }
+  }
+
+  .backBtn {
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 12px;
+    margin: 36px 0 0;
+    width: 150px;
+    max-width: 100%;
+    background-color: rgb(44 44 44);
+    border-radius: 8px;
+    padding: 10px 8px;
+    outline: 1px solid rgb(44 44 44);
+    outline-offset: -1px;
+  }
+
+  .backBtnIcon {
+    width: 16px;
+    min-width: 0;
+  }
+
+  .backBtnText {
+    min-width: 0;
+    font: 400 16px/1 Inter, Helvetica, Arial, serif;
+    color: rgb(245 245 245);
+  }
+
+  .mainContentArea {
+    display: flex;
+    flex-direction: column;
+    margin: 14px 0 0;
+    background: var(--src) center center / cover no-repeat;
+    border-radius: 8px;
+    outline: 1px solid rgb(217 217 217);
+    outline-offset: -1px;
+  }
+
+  .contentInnerColumn {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 37px;
+  }
+
+  .actionButtonsRow {
+    display: flex;
+
+    @include lg {
+      flex-direction: column;
+      align-items: center;
+      gap: 30px 0;
+    }
+  }
+
+  .fileDropArea {
+    display: flex;
+    flex-direction: column;
+    width: 281px;
+    min-width: 0;
+    background-color: rgb(254 247 255);
+    outline: 1px solid rgb(217 217 217);
+    outline-offset: -1px;
+
+    @include lg {
+      width: 100%;
+      min-width: unset;
+    }
+  }
+
+  .fileDropInner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 14px 8px 0;
+  }
+
+  .dropFilesBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 64px;
+    max-width: 100%;
+    font: 500 14px/1.42 Roboto, Helvetica, Arial, serif;
+    color: rgb(101 85 143);
+    text-align: center;
+    outline-offset: -1px;
+    letter-spacing: 0.1px;
+    outline-color: rgb(217 217 217);
+    outline-style: solid;
+  }
+
+  .dropFilesIcon {
+    width: 64px;
+    object-fit: cover;
+  }
+
+  .reviewVendorsBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 282px;
+    font: 500 14px/1.42 Roboto, Helvetica, Arial, serif;
+    color: rgb(101 85 143);
+    text-align: center;
+    background-color: rgb(254 247 255);
+    padding: 14px 8px;
+    outline: 1px solid rgb(217 217 217);
+    outline-offset: -1px;
+
+    @include lg {
+      width: 100%;
+      min-width: unset;
+    }
+  }
+
+  .reviewAccountsBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 281px;
+    font: 500 14px/1.42 Roboto, Helvetica, Arial, serif;
+    color: rgb(101 85 143);
+    text-align: center;
+    background-color: rgb(254 247 255);
+    padding: 14px 8px;
+    outline: 1px solid rgb(217 217 217);
+    outline-offset: -1px;
+    letter-spacing: 0.1px;
+
+    @include lg {
+      width: 100%;
+      min-width: unset;
+    }
+  }
+
+  .downloadBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 281px;
+    font: 500 14px/1.42 Roboto, Helvetica, Arial, serif;
+    color: rgb(101 85 143);
+    text-align: center;
+    background-color: rgb(254 247 255);
+    padding: 14px 8px;
+    outline: 1px solid rgb(217 217 217);
+    outline-offset: -1px;
+    letter-spacing: 0.1px;
+
+    @include lg {
+      width: 100%;
+      min-width: unset;
+    }
+  }
+
+  .uploadFilesBtn {
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 12px;
+    margin: 42px 0 0 24px;
+    width: 150px;
+    max-width: 100%;
+    background-color: rgb(101 85 143);
+    border-radius: 8px;
+    padding: 10px 14px;
+    outline: 1px solid rgb(101 85 143);
+    outline-offset: -1px;
+  }
+
+  .uploadBtnIcon {
+    width: 16px;
+    min-width: 0;
+  }
+
+  .uploadBtnText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 0;
+    font: 400 16px/1 Inter, Helvetica, Arial, serif;
+    color: rgb(245 245 245);
+    text-align: center;
+  }
+
+  .fileInfoContainer {
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    margin: 24px 30px 0;
+    background-color: rgb(255 255 255);
+    border-radius: 12px;
+
+    @include xs {
+      margin: 24px 16px 0;
+    }
+
+    @include tn {
+      margin: 24px 8px 0;
+    }
+  }
+
+  .fileInfoRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0 10px;
+    margin: 0 36px;
+
+    @include md {
+      margin: 0 32px;
+    }
+
+    @include xs {
+      margin: 0 16px;
+    }
+
+    @include tn {
+      column-gap: 8px;
+      margin: 0 8px;
+    }
+  }
+
+  .fileName {
+    display: flex;
+    align-items: center;
+    font: 400 16px/1.5 Roboto, Helvetica, Arial, serif;
+    color: rgb(29 27 32);
+    letter-spacing: 0.5px;
+  }
+
+  .fileStatusIcon {
+    width: 48px;
+    object-fit: cover;
+  }
+
+  .dividerLine {
+    z-index: 1;
+    margin: 0 30px;
+    width: 94.67%;
+    height: 1px;
+    object-fit: cover;
+
+    @include xs {
+      margin: 0 16px;
+    }
+
+    @include tn {
+      margin: 0 8px;
+    }
+  }
+
+  .nextBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 536px 5.87% 0 auto;
+    width: 150px;
+    max-width: 100%;
+    font: 400 16px/1 Inter, Helvetica, Arial, serif;
+    color: rgb(245 245 245);
+    text-align: center;
+    background-color: rgb(101 85 143);
+    border-radius: 8px;
+    padding: 10px 8px;
+    outline: 1px solid rgb(101 85 143);
+    outline-offset: -1px;
+  }
+}
