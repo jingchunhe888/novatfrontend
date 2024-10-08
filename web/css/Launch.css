@@ -1,9 +1,9 @@
-.untitled-page.mainContainer {
+.Launch .mainContainer {
   display: flex;
   flex-direction: column;
   background-color: white;
 }
-.untitled-page .contentWrapper {
+.Launch .contentWrapper {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
@@ -11,14 +11,14 @@
   max-width: 1440px;
   background-color: white;
 }
-.untitled-page .contentColumn {
+.Launch .contentColumn {
   display: flex;
   flex-direction: column;
   margin: 0 auto 37px;
   width: 1125.0703125px;
   max-width: 85%;
 }
-.untitled-page .titleContainer {
+.Launch .titleContainer {
   display: flex;
   flex-direction: column;
   background-color: whitesmoke;
@@ -26,7 +26,7 @@
   border-style: solid;
   border-width: 0 0 1px;
 }
-.untitled-page .brandTitle {
+.Launch .brandTitle {
   display: flex;
   align-items: center;
   margin: 32px 0 32px 32px;
@@ -37,26 +37,26 @@
   letter-spacing: -0.48px;
 }
 @media (max-width: 991px) {
-  .untitled-page .brandTitle {
+  .Launch .brandTitle {
     font-size: 22px;
   }
 }
 @media (max-width: 575px) {
-  .untitled-page .brandTitle {
+  .Launch .brandTitle {
     margin: 32px 0 32px 16px;
   }
 }
 @media (max-width: 479px) {
-  .untitled-page .brandTitle {
+  .Launch .brandTitle {
     font-size: 20px;
   }
 }
 @media (max-width: 383px) {
-  .untitled-page .brandTitle {
+  .Launch .brandTitle {
     margin: 32px 0 32px 8px;
   }
 }
-.untitled-page .backBtn {
+.Launch .backBtn {
   z-index: 1;
   display: flex;
   justify-content: center;
@@ -71,16 +71,16 @@
   outline: 1px solid #2c2c2c;
   outline-offset: -1px;
 }
-.untitled-page .backBtnIcon {
+.Launch .backBtnIcon {
   width: 16px;
   min-width: 0;
 }
-.untitled-page .backBtnText {
+.Launch .backBtnText {
   min-width: 0;
   font: 400 16px/1 Inter, Helvetica, Arial, serif;
   color: whitesmoke;
 }
-.untitled-page .mainContentArea {
+.Launch .mainContentArea {
   display: flex;
   flex-direction: column;
   margin: 14px 0 0;
@@ -89,22 +89,22 @@
   outline: 1px solid #d9d9d9;
   outline-offset: -1px;
 }
-.untitled-page .contentInnerColumn {
+.Launch .contentInnerColumn {
   display: flex;
   flex-direction: column;
   margin: 0 0 37px;
 }
-.untitled-page .actionButtonsRow {
+.Launch .actionButtonsRow {
   display: flex;
 }
 @media (max-width: 1199px) {
-  .untitled-page .actionButtonsRow {
+  .Launch .actionButtonsRow {
     flex-direction: column;
     align-items: center;
     gap: 30px 0;
   }
 }
-.untitled-page .fileDropArea {
+.Launch .fileDropArea {
   display: flex;
   flex-direction: column;
   width: 281px;
@@ -114,18 +114,18 @@
   outline-offset: -1px;
 }
 @media (max-width: 1199px) {
-  .untitled-page .fileDropArea {
+  .Launch .fileDropArea {
     width: 100%;
     min-width: unset;
   }
 }
-.untitled-page .fileDropInner {
+.Launch .fileDropInner {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 14px 8px 0;
 }
-.untitled-page .dropFilesBtn {
+.Launch .dropFilesBtn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -139,12 +139,12 @@
   outline-color: #d9d9d9;
   outline-style: solid;
 }
-.untitled-page .dropFilesIcon {
+.Launch .dropFilesIcon {
   width: 64px;
   -o-object-fit: cover;
   object-fit: cover;
 }
-.untitled-page .reviewVendorsBtn {
+.Launch .reviewVendorsBtn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -158,12 +158,12 @@
   outline-offset: -1px;
 }
 @media (max-width: 1199px) {
-  .untitled-page .reviewVendorsBtn {
+  .Launch .reviewVendorsBtn {
     width: 100%;
     min-width: unset;
   }
 }
-.untitled-page .reviewAccountsBtn {
+.Launch .reviewAccountsBtn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -178,12 +178,12 @@
   letter-spacing: 0.1px;
 }
 @media (max-width: 1199px) {
-  .untitled-page .reviewAccountsBtn {
+  .Launch .reviewAccountsBtn {
     width: 100%;
     min-width: unset;
   }
 }
-.untitled-page .downloadBtn {
+.Launch .downloadBtn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -198,12 +198,12 @@
   letter-spacing: 0.1px;
 }
 @media (max-width: 1199px) {
-  .untitled-page .downloadBtn {
+  .Launch .downloadBtn {
     width: 100%;
     min-width: unset;
   }
 }
-.untitled-page .uploadFilesBtn {
+.Launch .uploadFilesBtn {
   z-index: 1;
   display: flex;
   justify-content: center;
@@ -218,11 +218,11 @@
   outline: 1px solid #65558f;
   outline-offset: -1px;
 }
-.untitled-page .uploadBtnIcon {
+.Launch .uploadBtnIcon {
   width: 16px;
   min-width: 0;
 }
-.untitled-page .uploadBtnText {
+.Launch .uploadBtnText {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -231,7 +231,7 @@
   color: whitesmoke;
   text-align: center;
 }
-.untitled-page .fileInfoContainer {
+.Launch .fileInfoContainer {
   z-index: 1;
   display: flex;
   flex-direction: column;
@@ -240,16 +240,16 @@
   border-radius: 12px;
 }
 @media (max-width: 575px) {
-  .untitled-page .fileInfoContainer {
+  .Launch .fileInfoContainer {
     margin: 24px 16px 0;
   }
 }
 @media (max-width: 383px) {
-  .untitled-page .fileInfoContainer {
+  .Launch .fileInfoContainer {
     margin: 24px 8px 0;
   }
 }
-.untitled-page .fileInfoRow {
+.Launch .fileInfoRow {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -257,35 +257,35 @@
   margin: 0 36px;
 }
 @media (max-width: 991px) {
-  .untitled-page .fileInfoRow {
+  .Launch .fileInfoRow {
     margin: 0 32px;
   }
 }
 @media (max-width: 575px) {
-  .untitled-page .fileInfoRow {
+  .Launch .fileInfoRow {
     margin: 0 16px;
   }
 }
 @media (max-width: 383px) {
-  .untitled-page .fileInfoRow {
+  .Launch .fileInfoRow {
     -moz-column-gap: 8px;
     column-gap: 8px;
     margin: 0 8px;
   }
 }
-.untitled-page .fileName {
+.Launch .fileName {
   display: flex;
   align-items: center;
   font: 400 16px/1.5 Roboto, Helvetica, Arial, serif;
   color: #1d1b20;
   letter-spacing: 0.5px;
 }
-.untitled-page .fileStatusIcon {
+.Launch .fileStatusIcon {
   width: 48px;
   -o-object-fit: cover;
   object-fit: cover;
 }
-.untitled-page .dividerLine {
+.Launch .dividerLine {
   z-index: 1;
   margin: 0 30px;
   width: 94.67%;
@@ -294,16 +294,16 @@
   object-fit: cover;
 }
 @media (max-width: 575px) {
-  .untitled-page .dividerLine {
+  .Launch .dividerLine {
     margin: 0 16px;
   }
 }
 @media (max-width: 383px) {
-  .untitled-page .dividerLine {
+  .Launch .dividerLine {
     margin: 0 8px;
   }
 }
-.untitled-page .nextBtn {
+.Launch .nextBtn {
   display: flex;
   justify-content: center;
   align-items: center;
