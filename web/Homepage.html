@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="./css/common.css" />
+    <link rel="stylesheet" type="text/css" href="./css/fonts.css" />
+    <link rel="stylesheet" type="text/css" href="./css/Homepage.css" />
+    <link rel="stylesheet" type="text/css" href="./css/AddClientOverlay.css" />
+</head>
+
+<body class="flex-column">
+    <!-- Existing Homepage Section -->
+    <section class="homepage clientOverviewSection">
+        <div class="containerWrapper">
+            <div class="flexColumn">
+                <div class="contentBox">
+                    <div class="nestedWrapper">
+                        <h2 class="titleHeader">Novat</h2>
+                    </div>
+                </div>
+                <img class="clientImage" src="./assets/955c85f3ebfddff2b6bddc63f824b9ca.svg" alt="alt text" />
+            </div>
+        </div>
+        <div class="actionColumn">
+            <button id="addClientButton" class="addClientButton"style="cursor: pointer;">Add Client </button>
+
+            
+        <div class="additionalActionsColumn">
+
+        </div>
+        
+    </section>
+
+<!-- Modal Section for Add Client -->
+<div id="addClientModal" class="add-client-overlay" style="display: none;">
+    <div class="flex_col">
+        <div class="flex_row" style="justify-content: space-between; align-items: center;">
+            <h2 class="addClientTitle">Add Client</h2>
+            <img 
+                id="closeModalButton" 
+                class="clientImage" 
+                src="./assets/b416a477b5c8506ac22e00a3f8bf0561.svg" 
+                alt="Close" 
+                style="cursor: pointer; margin-left: auto; width: 24px; height: 24px;"  <!-- Add dimensions if necessary -->
+            />
+        </div>
+        <div class="flex_row1">
+            <p class="nameLabel">Name:</p>
+            <input type="text" class="nameInputField" placeholder="Enter client name" />
+        </div>
+        <div class="flex_row2">
+            <p class="uploadInstructions">Upload one or more bank statement PDF files</p>
+            <button class="uploadFilesButton"style="cursor: pointer;">Upload Files</button>
+        </div>
+    </div>
+</div>
+
+
+
+    <script src="../src/js/main.js"></script>
+</body>
+
+</html>

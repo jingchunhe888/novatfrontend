@@ -1,0 +1,208 @@
+.homepage.clientOverviewSection {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.homepage .containerWrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1440px;
+  background-color: white;
+  overflow: hidden;
+}
+.homepage .flexColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 86px 0;
+  margin: 0 auto 37px;
+  width: 1125.0703125px;
+  max-width: 85%;
+}
+@media (max-width: 575px) {
+  .homepage .flexColumn {
+    gap: 80px 0;
+  }
+}
+@media (max-width: 383px) {
+  .homepage .flexColumn {
+    gap: 50px 0;
+  }
+}
+.homepage .contentBox {
+  display: flex;
+  flex-direction: column;
+  background-color: whitesmoke;
+  border-color: #d9d9d9;
+  border-style: solid;
+  border-width: 0 0 1px;
+}
+.homepage .nestedWrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 32px 0 32px 32px;
+  width: 67px;
+  max-width: 85%;
+}
+@media (max-width: 575px) {
+  .homepage .nestedWrapper {
+    margin: 32px 0 32px 16px;
+  }
+}
+@media (max-width: 383px) {
+  .homepage .nestedWrapper {
+    margin: 32px 0 32px 8px;
+  }
+}
+.homepage .titleHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 29px;
+  font: 600 24px/1.2 Inter, Helvetica, Arial, serif;
+  color: black;
+  text-align: center;
+  letter-spacing: -0.48px;
+
+}
+@media (max-width: 991px) {
+  .homepage .titleHeader {
+    font-size: 22px;
+  }
+}
+@media (max-width: 479px) {
+  .homepage .titleHeader {
+    font-size: 20px;
+  }
+}
+.homepage .clientImage {
+  width: 100%;
+  border-radius: 8px;
+  outline: 1px solid #d9d9d9;
+  outline-offset: -1px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.homepage .actionColumn {
+  position: absolute;
+  top: 202px;
+  left: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 31px 0;
+  width: 1080px;
+  transform: translate(-50%, 0);
+}
+.homepage .addClientButton {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 0 auto;
+  width: 150px;
+  max-width: 100%;
+  font: 400 16px/1 Inter, Helvetica, Arial, serif;
+  color: whitesmoke;
+  text-align: center;
+  background-color: #2c2c2c;
+  border-radius: 8px;
+  padding: 10px 34px;
+  outline: 1px solid #2c2c2c;
+  outline-offset: -1px;
+}
+.homepage .additionalActionsColumn {
+  display: flex;
+  flex-direction: column;
+  margin: 0 15px 0 0;
+}
+@media (max-width: 383px) {
+  .homepage .additionalActionsColumn {
+    margin: 0 8px 0 0;
+  }
+}
+.homepage .secondaryContentBox {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 12px;
+}
+.homepage .inlineFlexRow {
+  display: flex;
+  justify-content: space-between;
+  gap: 0 10px;
+  margin: 0 36px;
+}
+@media (max-width: 991px) {
+  .homepage .inlineFlexRow {
+    margin: 0 32px;
+  }
+}
+@media (max-width: 575px) {
+  .homepage .inlineFlexRow {
+    margin: 0 16px;
+  }
+}
+@media (max-width: 383px) {
+  .homepage .inlineFlexRow {
+    -moz-column-gap: 8px;
+    column-gap: 8px;
+    margin: 0 8px;
+  }
+}
+.homepage .imageAndInputRow {
+  display: flex;
+  align-items: center;
+  width: 800px;
+  min-width: 0;
+}
+.homepage .inputImage {
+  width: 48px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.homepage .inputLabel {
+  display: flex;
+  align-items: center;
+  font: 400 16px/1.5 Roboto, Helvetica, Arial, serif;
+  color: #1d1b20;
+  letter-spacing: 0.5px;
+}
+.homepage .actionButtonRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0 10px;
+  width: 246px;
+  min-width: 0;
+}
+@media (max-width: 383px) {
+  .homepage .actionButtonRow {
+    -moz-column-gap: 8px;
+    column-gap: 8px;
+  }
+}
+.homepage .launchButton {
+  display: flex;
+  justify-content: center;
+  min-width: 150px;
+  font: 400 16px/1 Inter, Helvetica, Arial, serif;
+  color: whitesmoke;
+  text-align: center;
+  background-color: #5a5a5a;
+  border-radius: 8px;
+  padding: 10px 8px;
+  outline: 1px solid #767676;
+  outline-offset: -1px;
+}
+.homepage .launchImage {
+  width: 48px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.homepage .separatorLine {
+  width: 100%;
+  height: 1px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
