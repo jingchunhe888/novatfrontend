@@ -238,6 +238,8 @@
   margin: 24px 30px 0;
   background-color: white;
   border-radius: 12px;
+  max-height: 500px; /* Adjust as necessary */
+  overflow-y: auto; /* Allows scrolling if content exceeds max height */
 }
 @media (max-width: 575px) {
   .Launch .fileInfoContainer {
@@ -307,7 +309,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 536px 5.87% 0 auto;
+  margin: 35px 5.87% 0 auto;
   width: 150px;
   max-width: 100%;
   font: 400 16px/1 Inter, Helvetica, Arial, serif;

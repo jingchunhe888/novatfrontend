@@ -28,7 +28,8 @@
                 <div class="titleContainer">
                     <p class="brandTitle">Novat</p>
                 </div>
-                <button class="backBtn">
+                <button class="backBtn" style= "cursor:pointer;" onclick="window.location.href='Homepage.html'">
+
                     <!-- TODO -->
                     <img class="backBtnIcon" src="./assets/7c296567514e01ade1bc16ed4e9c1ee6.svg" alt="alt text" />
                     <span class="backBtnText">Back</span>
@@ -59,18 +60,32 @@
                                 Download
                             </button>
                         </div>
-                        <button class="uploadFilesBtn">
-                            <!-- TODO -->
+                        
+                        <!-- Upload Files Button -->
+                        <button class="uploadFilesBtn" style="cursor: pointer;">
                             <img class="uploadBtnIcon" src="./assets/6cc7b1971c72dcf31f9c2f125024a122.svg" alt="alt text" />
-                            <span class="uploadBtnText">Upload Files</span>
+                            <span class="uploadBtnText"> Upload Files</span>
                         </button>
-                        <div class="fileInfoContainer">
-                            <div class="fileInfoRow">
-                                <p class="fileName">M&amp;T Bank/Other Files/Chase Platinum Select Checking.pdf</p>
-                                <img class="fileStatusIcon" src="./assets/90410cffd815afcaabb8327315f546c6.svg" alt="alt text" />
+
+                        <input type="file" id="fileInput" multiple style = "display: none;"/>
+
+
+                        <!-- Container to display selected file information -->
+
+
+
+
+                            <div class="fileInfoContainer" id="fileInfoContainer">
+                                <!-- <div class="fileInfoRow">
+                                    <p class="fileName">M&amp;T Bank/OtherFiles/Chase Platinum Select Checking.pdf</p>
+                                    <img class="fileStatusIcon" src="./assets/90410cffd815afcaabb8327315f546c6.svg" alt="alt text" />
+                                </div> -->
+
+                            <!-- <img class="dividerLine" src="./assets/f7b97f226fb21759ab170421000923ed.svg" alt="alt text" /> -->
+
                             </div>
-                        </div>
-                        <img class="dividerLine" src="./assets/f7b97f226fb21759ab170421000923ed.svg" alt="alt text" />
+
+
                         <button class="nextBtn">
                             <!-- TODO -->
                             Next
@@ -81,7 +96,7 @@
         </div>
     </section>
 
-
+    <script src="../src/js/main.js"></script>
 </body>
 
 </html>
