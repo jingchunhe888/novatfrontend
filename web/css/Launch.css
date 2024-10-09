@@ -96,113 +96,67 @@
 }
 .Launch .actionButtonsRow {
   display: flex;
-}
-@media (max-width: 1199px) {
-  .Launch .actionButtonsRow {
-    flex-direction: column;
-    align-items: center;
-    gap: 30px 0;
-  }
-}
-.Launch .fileDropArea {
-  display: flex;
-  flex-direction: column;
-  width: 281px;
-  min-width: 0;
-  background-color: #fef7ff;
-  outline: 1px solid #d9d9d9;
-  outline-offset: -1px;
-}
-@media (max-width: 1199px) {
-  .Launch .fileDropArea {
-    width: 100%;
-    min-width: unset;
-  }
-}
-.Launch .fileDropInner {
-  display: flex;
-  flex-direction: column;
+  justify-content: space-between; /* Evenly spaces the buttons */
   align-items: center;
-  margin: 14px 8px 0;
 }
-.Launch .dropFilesBtn {
+
+.Launch .buttonContainer {
+  display: flex;
+  flex-direction: column; /* Stack the button and icon vertically */
+  align-items: stretch; /* Center align the contents */
+  flex:1;
+}
+
+/* Unified button styling for all buttons */
+.Launch .tabBtn{
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 64px;
-  max-width: 100%;
+  flex: 1; /* Allow buttons to grow and take equal space */
   font: 500 14px/1.42 Roboto, Helvetica, Arial, serif;
   color: #65558f;
   text-align: center;
+  background-color: #fef7ff;
+  outline: 1px solid #d9d9d9;
   outline-offset: -1px;
-  letter-spacing: 0.1px;
-  outline-color: #d9d9d9;
-  outline-style: solid;
+  margin: 0; /* Reset margin to prevent uneven sizing */
+  min-width: 0; /* Prevent flex items from overflowing */
 }
+.Launch .tabBtn {
+  padding: 14px 8px; /* Reset padding to allow flex to fill space */
+  flex-grow: 1; /* Ensure the button grows to fill the container */
+}
+
+/* Ensure even spacing between buttons */
+.Launch .actionButtonsRow > div { /* Assuming buttons are wrapped in divs */
+  margin: 0 5px; /* Add spacing between buttons */
+}
+
 .Launch .dropFilesIcon {
-  width: 64px;
+  width: auto;
+  height:auto;
   -o-object-fit: cover;
   object-fit: cover;
 }
-.Launch .reviewVendorsBtn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-width: 282px;
-  font: 500 14px/1.42 Roboto, Helvetica, Arial, serif;
-  color: #65558f;
-  text-align: center;
-  background-color: #fef7ff;
-  padding: 14px 8px;
-  outline: 1px solid #d9d9d9;
-  outline-offset: -1px;
+
+/* Ensure even spacing between buttons */
+.Launch .actionButtonsRow > div { /* Assuming buttons are wrapped in divs */
+  margin: 0 5px; /* Add spacing between buttons */
 }
+
+
+/* For responsive design, make the buttons full width */
 @media (max-width: 1199px) {
-  .Launch .reviewVendorsBtn {
-    width: 100%;
-    min-width: unset;
+.Launch .tabBtn{
+  flex: 1; /* Ensures all buttons grow equally */
+  width: auto; /* Remove width constraint */
+  margin: 0; /* Reset margin */
+  
   }
 }
-.Launch .reviewAccountsBtn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-width: 281px;
-  font: 500 14px/1.42 Roboto, Helvetica, Arial, serif;
-  color: #65558f;
-  text-align: center;
-  background-color: #fef7ff;
-  padding: 14px 8px;
-  outline: 1px solid #d9d9d9;
-  outline-offset: -1px;
-  letter-spacing: 0.1px;
-}
-@media (max-width: 1199px) {
-  .Launch .reviewAccountsBtn {
-    width: 100%;
-    min-width: unset;
-  }
-}
-.Launch .downloadBtn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-width: 281px;
-  font: 500 14px/1.42 Roboto, Helvetica, Arial, serif;
-  color: #65558f;
-  text-align: center;
-  background-color: #fef7ff;
-  padding: 14px 8px;
-  outline: 1px solid #d9d9d9;
-  outline-offset: -1px;
-  letter-spacing: 0.1px;
-}
-@media (max-width: 1199px) {
-  .Launch .downloadBtn {
-    width: 100%;
-    min-width: unset;
-  }
-}
+
+
+
 .Launch .uploadFilesBtn {
   z-index: 1;
   display: flex;

@@ -107,4 +107,24 @@ document.addEventListener("DOMContentLoaded", function () {
             alert("Please enter a client name."); // Show alert if no name is provided
         }
     });
+
+    function showTab(tabId) {
+        // Hide all tabs
+        document.querySelectorAll('.tab-content').forEach(tab => tab.classList.remove('active'));
+        // Show the clicked tab
+        document.getElementById(tabId).classList.add('active');
+        
+        // Remove the indicator from all buttons
+        document.querySelectorAll('.actionButtonsRow img').forEach(icon => icon.classList.remove('activeTabIcon'));
+    
+        // Add the indicator below the clicked button
+        if (tabId === 'vendorsTab') {
+            document.querySelector('#vendorsBtn + img').classList.add('activeTabIcon');
+        } else if (tabId === 'accountsTab') {
+            document.querySelector('#accountsBtn + img').classList.add('activeTabIcon');
+        } else if (tabId === 'downloadTab') {
+            document.querySelector('#downloadBtn + img').classList.add('activeTabIcon');
+        }
+    }
+    
 });

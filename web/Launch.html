@@ -39,17 +39,19 @@
                 <div class="tab-content active" id="uploadTab">
                     <div class="mainContentArea" style="--src:url(../assets/955c85f3ebfddff2b6bddc63f824b9ca.svg)">
                         <div class="contentInnerColumn">
-                            <div class="actionButtonsRow">
-                                <div class="fileDropArea">
-                                    <div class="fileDropInner">
-                                        <button class="dropFilesBtn" >Drop Files</button>
-                                        <img class="dropFilesIcon" src="./assets/13f45d5990b40af7c96f2633fb510ded.svg" alt="alt text" />
-                                    </div>
+
+                            <div class="Launch">
+                                <div class="actionButtonsRow">
+                                    <button class="tabBtn" >Drop Files</button>
+                                    <button class="tabBtn" id="1vendorsBtn" onclick="showTab('vendorsTab')">Review Vendors/Payees</button>
+                                    <button class="tabBtn" id="1accountsBtn" onclick="showTab('accountsTab')">Review Accounts</button>
+                                    <button class="tabBtn" id="1downloadBtn" onclick="showTab('downloadTab')">Download</button>
+                                    
                                 </div>
-                                <button class="reviewVendorsBtn" onclick="showTab('vendorsTab')">Review Vendors/Payees</button>
-                                <button class="reviewAccountsBtn" onclick="showTab('accountsTab')">Review Accounts</button>
-                                <button class="downloadBtn" onclick="showTab('downloadTab')">Download</button>
+                                <!-- <img class="" src="./assets/13f45d5990b40af7c96f2633fb510ded.svg" alt="alt text" /> -->
+    
                             </div>
+
     
                             <button class="uploadFilesBtn" style="cursor: pointer;" onclick="document.getElementById('fileInput').click();">
                                 <img class="uploadBtnIcon" src="./assets/6cc7b1971c72dcf31f9c2f125024a122.svg" alt="alt text" />
@@ -73,25 +75,27 @@
                     <div class="mainContentArea" style="--src:url(../assets/955c85f3ebfddff2b6bddc63f824b9ca.svg)">
                         <div class="contentInnerColumn">
                             <div class="actionButtonsRow">
-                                <div class="fileDropArea">
-                                    <div class="fileDropInner">
-                                        <button class="dropFilesBtn" >Drop Files</button>
-                                        <img class="dropFilesIcon" src="./assets/13f45d5990b40af7c96f2633fb510ded.svg" alt="alt text" />
-                                    </div>
-                                </div>
-                                <button class="reviewVendorsBtn" onclick="showTab('vendorsTab')">Review Vendors/Payees</button>
-                                <button class="reviewAccountsBtn" onclick="showTab('accountsTab')">Review Accounts</button>
-                                <button class="downloadBtn" onclick="showTab('downloadTab')">Download</button>
+
+                                <button class="tabBtn" >Drop Files</button>
+
+                                <button class="tabBtn" id="1vendorsBtn" onclick="showTab('vendorsTab')">Review Vendors/Payees</button>
+                                <button class="tabBtn" id="1accountsBtn" onclick="showTab('accountsTab')">Review Accounts</button>
+                                <button class="tabBtn" id="1downloadBtn" onclick="showTab('downloadTab')">Download</button>
+                                
                             </div>
-
-
     
-                            <div class="fileInfoContainer" id="vendorInfoContainer">
+                            <button class="uploadFilesBtn" style="cursor: pointer;" onclick="document.getElementById('fileInput').click();">
+                                <img class="uploadBtnIcon" src="./assets/6cc7b1971c72dcf31f9c2f125024a122.svg" alt="alt text" />
+                                <span class="uploadBtnText"> Upload Files</span>
+                            </button>
+    
+                            <input type="file" id="fileInput" multiple style="display: none;" />
+    
+                            <div class="fileInfoContainer" id="vendorsInfoContainer">
     
                                 <h1>
                                     vendors
                                 </h1>
-        
                             </div>
                             <button class="nextBtn" style="cursor: pointer;" onclick="nextTab('accountsTab')">Next</button>
     
@@ -99,24 +103,27 @@
                     </div>
     
                 </div>
+    
 
                 <div class="tab-content" id="accountsTab">
                     <div class="mainContentArea" style="--src:url(../assets/955c85f3ebfddff2b6bddc63f824b9ca.svg)">
                         <div class="contentInnerColumn">
                             <div class="actionButtonsRow">
-                                <div class="fileDropArea">
-                                    <div class="fileDropInner">
-                                        <button class="dropFilesBtn" >Drop Files</button>
-                                        <img class="dropFilesIcon" src="./assets/13f45d5990b40af7c96f2633fb510ded.svg" alt="alt text" />
-                                    </div>
-                                </div>
-                                <button class="reviewVendorsBtn" onclick="showTab('vendorsTab')">Review Vendors/Payees</button>
-                                <button class="reviewAccountsBtn" onclick="showTab('accountsTab')">Review Accounts</button>
-                                <button class="downloadBtn" onclick="showTab('downloadTab')">Download</button>
+
+                                <button class="tabBtn" >Drop Files</button>
+
+                                <button class="tabBtn" id="1vendorsBtn" onclick="showTab('vendorsTab')">Review Vendors/Payees</button>
+                                <button class="tabBtn" id="1accountsBtn" onclick="showTab('accountsTab')">Review Accounts</button>
+                                <button class="tabBtn" id="1downloadBtn" onclick="showTab('downloadTab')">Download</button>
+                                
                             </div>
-
-
     
+                            <button class="uploadFilesBtn" style="cursor: pointer;" onclick="document.getElementById('fileInput').click();">
+                                <img class="uploadBtnIcon" src="./assets/6cc7b1971c72dcf31f9c2f125024a122.svg" alt="alt text" />
+                                <span class="uploadBtnText"> Upload Files</span>
+                            </button>
+    
+                            <input type="file" id="fileInput" multiple style="display: none;" />
     
                             <div class="fileInfoContainer" id="accountsInfoContainer">
     
@@ -135,30 +142,35 @@
                     <div class="mainContentArea" style="--src:url(../assets/955c85f3ebfddff2b6bddc63f824b9ca.svg)">
                         <div class="contentInnerColumn">
                             <div class="actionButtonsRow">
-                                <div class="fileDropArea">
-                                    <div class="fileDropInner">
-                                        <button class="dropFilesBtn" >Drop Files</button>
-                                        <img class="dropFilesIcon" src="./assets/13f45d5990b40af7c96f2633fb510ded.svg" alt="alt text" />
-                                    </div>
-                                </div>
-                                <button class="reviewVendorsBtn" onclick="showTab('vendorsTab')">Review Vendors/Payees</button>
-                                <button class="reviewAccountsBtn" onclick="showTab('accountsTab')">Review Accounts</button>
-                                <button class="downloadBtn" onclick="showTab('downloadTab')">Download</button>
-                            </div>
 
+                                <button class="tabBtn" >Drop Files</button>
+
+                                <button class="tabBtn" id="1vendorsBtn" onclick="showTab('vendorsTab')">Review Vendors/Payees</button>
+                                <button class="tabBtn" id="1accountsBtn" onclick="showTab('accountsTab')">Review Accounts</button>
+                                <button class="tabBtn" id="1downloadBtn" onclick="showTab('downloadTab')">Download</button>
+                                
+                            </div>
+    
+                            <button class="uploadFilesBtn" style="cursor: pointer;" onclick="document.getElementById('fileInput').click();">
+                                <img class="uploadBtnIcon" src="./assets/6cc7b1971c72dcf31f9c2f125024a122.svg" alt="alt text" />
+                                <span class="uploadBtnText"> Upload Files</span>
+                            </button>
+    
+                            <input type="file" id="fileInput" multiple style="display: none;" />
     
                             <div class="fileInfoContainer" id="downloadInfoContainer">
-                                <h1>
-                                    Download
-                                </h1>
     
+                                <h1>
+                                    download
+                                </h1>
                             </div>
-                            <button class="nextBtn" style="cursor: pointer;" onclick="nextTab('downloadTab')">Download</button>
+                            <button class="nextBtn" style="cursor: pointer;" >Download</button>
     
                         </div>
                     </div>
     
                 </div>
+
             </div>
         </div>
     </section>
