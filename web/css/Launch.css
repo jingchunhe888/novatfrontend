@@ -259,6 +259,17 @@
     margin: 0 8px;
   }
 }
+
+.bottomButtonContainer {
+  display: flex;
+  justify-content: flex-end; /* Aligns buttons to the left */
+  align-items: center;
+  flex-direction: row;
+  margin: 5px 5.87% 0 auto; /* Same position as the original Next button */
+  gap:5px;
+}
+
+/* Style for the Next button (remains on the right) */
 .Launch .nextBtn {
   display: flex;
   justify-content: center;
@@ -281,7 +292,7 @@
   .tabs.fileManagementSection {
     flex-direction: column;
     align-items: center;
-    gap: 30px 0;
+    gap: 15px 0;
   }
 }
 .tabs .dropFilesContainer {
@@ -308,7 +319,7 @@
 }
 @media (max-width: 767px) {
   .tabs .dropFilesContent {
-    width: 85%;
+    width: 100%;
   }
 }
 .tabs .dropFilesTitle {
@@ -324,7 +335,9 @@
   width: 64px;
   -o-object-fit: cover;
   object-fit: cover;
+
 }
+
 .tabs .reviewVendorsContainer {
   display: flex;
   flex-direction: column;
