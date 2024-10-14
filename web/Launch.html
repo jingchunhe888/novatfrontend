@@ -30,9 +30,9 @@
                     <p class="brandTitle">Novat</p>
                 </div>
 
-                <button class="backBtn" style="cursor:pointer;" onclick="window.location.href='Homepage.html'">
-                    <img class="backBtnIcon" src="./assets/7c296567514e01ade1bc16ed4e9c1ee6.svg" alt="alt text" />
-                    <span class="backBtnText">Back</span>
+                <button class="Btn" style="cursor:pointer;" onclick="window.location.href='Homepage.html'">
+                    <img class="BtnIcon" src="./assets/7c296567514e01ade1bc16ed4e9c1ee6.svg" alt="alt text" />
+                    <span class="BtnText"></span>
                 </button>
 
                 <div class="tab-content active" id="uploadTab">
@@ -73,9 +73,8 @@
                             <input type="file" id="fileInput" multiple style="display: none;" />
 
                             <div class="fileInfoContainer" id="fileInfoContainer"></div>
-<!-- Inside the content area where the Next button is -->
+                                <!-- Inside the content area where the Next button is -->
                             <div class="bottomButtonContainer">
-                                <button class="nextBtn" style="cursor: pointer;" id="backBtn">Back</button>
                                 <button class="nextBtn" style="cursor: pointer;" id="nextBtn" onclick="nextTab('vendorsTab')">Next</button>
                             </div>
                         </div>
@@ -113,7 +112,11 @@
                             <div class="fileInfoContainer" id="vendorsInfoContainer">
                                 <h1>Vendors</h1>
                             </div>
-                            <button class="nextBtn" style="cursor: pointer;" onclick="nextTab('accountsTab')">Next</button>
+
+                            <div class="bottomButtonContainer">
+                                <button class="nextBtn" style="cursor: pointer;" onclick="nextTab('uploadTab')">Back</button>
+                                <button class="nextBtn" style="cursor: pointer;" onclick="nextTab('accountsTab')">Next</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -149,8 +152,10 @@
                             <div class="fileInfoContainer" id="accountsInfoContainer">
                                 <h1>Accounts</h1>
                             </div>
-                            <button class="nextBtn" style="cursor: pointer;" onclick="nextTab('downloadTab')">Next</button>
-                        </div>
+                            <div class="bottomButtonContainer">
+                                <button class="nextBtn" style="cursor: pointer;" onclick="nextTab('vendorsTab')">Back</button>
+                                <button class="nextBtn" style="cursor: pointer;" onclick="nextTab('downloadTab')">Next</button>
+                            </div>                        </div>
                     </div>
                 </div>
 
@@ -185,8 +190,18 @@
                             <div class="fileInfoContainer" id="downloadInfoContainer">
                                 <h1>Download</h1>
                             </div>
-                            <button class="nextBtn" style="cursor: pointer;">Download Excel</button>
-                            <button class="nextBtn" style="cursor: pointer;">Download CSV</button>
+                            <div class="bottomButtonContainer">
+                                <button class="nextBtn" style="cursor: pointer;" onclick="nextTab('accountsTab')">Back</button>                            
+                                <!-- Dropdown to choose file format -->
+                                <select class="nextBtn" id="fileFormatSelect" style="width: auto;">
+                                    <option value="csv">CSV</option>
+                                    <option value="xlsx">Excel</option>
+                                </select>
+                            
+                                <!-- Unified Download Button -->
+                                <button class="nextBtn" style="cursor: pointer;" id="downloadBtn">Download</button>
+                            </div>
+                            
                         </div>
                     </div>
                 </div>
