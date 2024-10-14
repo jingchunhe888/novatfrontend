@@ -30,131 +30,180 @@
                     <p class="brandTitle">Novat</p>
                 </div>
 
-                <button class="backBtn" style="cursor:pointer;" onclick="window.location.href='Homepage.html'">
-                    <img class="backBtnIcon" src="./assets/7c296567514e01ade1bc16ed4e9c1ee6.svg" alt="alt text" />
-                    <span class="backBtnText">Back</span>
+                <button class="Btn" style="cursor:pointer;" onclick="window.location.href='Homepage.html'">
+                    <img class="BtnIcon" src="./assets/7c296567514e01ade1bc16ed4e9c1ee6.svg" alt="alt text" />
+                    <span class="BtnText"></span>
                 </button>
-
 
                 <div class="tab-content active" id="uploadTab">
                     <div class="mainContentArea" style="--src:url(../assets/955c85f3ebfddff2b6bddc63f824b9ca.svg)">
                         <div class="contentInnerColumn">
 
-                            <div class="Launch">
-                                <div class="actionButtonsRow">
-                                    <button class="tabBtn" id="1vendorsBtn" onclick="showTab('uploadTab')">Drop Files</button>
-                                    <button class="tabBtn" id="1vendorsBtn" onclick="showTab('vendorsTab')">Review Vendors/Payees</button>
-                                    <button class="tabBtn" id="1accountsBtn" onclick="showTab('accountsTab')">Review Accounts</button>
-                                    <button class="tabBtn" id="1downloadBtn" onclick="showTab('downloadTab')">Download</button>
-                                    
-                                </div>
-                                <!-- <img class="" src="./assets/13f45d5990b40af7c96f2633fb510ded.svg" alt="alt text" /> -->
-    
-                            </div>
+                                <section class="tabs fileManagementSection">
+                                    <!-- File Management Section -->
+                                    <div class="dropFilesContainer">
+                                        <div class="dropFilesContent">
+                                            <p class="dropFilesTitle">Drop Files</p>
+                                            <img class="dropFilesIcon" src="./assets/13f45d5990b40af7c96f2633fb510ded.svg" alt="alt text" />
+                                        </div>
+                                    </div>
+                                    <div class="reviewVendorsContainer">
+                                        <div class="reviewVendorsContent">
+                                            <p class="reviewVendorsTitle">Review Vendors/Payees</p>
+                                        </div>
+                                    </div>
+                                    <div class="reviewAccountsContainer">
+                                        <div class="reviewAccountsContent">
+                                            <p class="reviewAccountsTitle">Review Accounts</p>
+                                        </div>
+                                    </div>
+                                    <div class="downloadContainer">
+                                        <div class="downloadContent">
+                                            <p class="downloadTitle">Download</p>
+                                        </div>
+                                    </div>
+                                </section>
 
-    
-                            <button class="uploadFilesBtn" style="cursor: pointer;" >
+
+                            <button class="uploadFilesBtn" style="cursor: pointer;">
                                 <img class="uploadBtnIcon" src="./assets/6cc7b1971c72dcf31f9c2f125024a122.svg" alt="alt text" />
                                 <span class="uploadBtnText"> Upload Files</span>
                             </button>
-    
+
                             <input type="file" id="fileInput" multiple style="display: none;" />
-    
-                            <div class="fileInfoContainer" id="fileInfoContainer">
-    
-    
+
+                            <div class="fileInfoContainer" id="fileInfoContainer"></div>
+                                <!-- Inside the content area where the Next button is -->
+                            <div class="bottomButtonContainer">
+                                <button class="nextBtn" style="cursor: pointer;" id="nextBtn" onclick="nextTab('vendorsTab')">Next</button>
                             </div>
-                            <button class="nextBtn" style="cursor: pointer;" onclick="nextTab('vendorsTab')">Next</button>
-    
                         </div>
                     </div>
-    
                 </div>
-                
+
                 <div class="tab-content" id="vendorsTab">
                     <div class="mainContentArea" style="--src:url(../assets/955c85f3ebfddff2b6bddc63f824b9ca.svg)">
                         <div class="contentInnerColumn">
-                            <div class="actionButtonsRow">
+                            <section class="tabs fileManagementSection">
+                                <!-- File Management Section -->
+                                <div class="dropFilesContainer">
+                                    <div class="dropFilesContent">
+                                        <p class="dropFilesTitle">Drop Files</p>
+                                    </div>
+                                </div>
+                                <div class="reviewVendorsContainer">
+                                    <div class="reviewVendorsContent">
+                                        <p class="reviewVendorsTitle">Review Vendors/Payees</p>
+                                        <img class="reviewVendorsIcon" src="./assets/fb8d8e04834ce2f6d346d586d79073b4.svg" alt="alt text" />
+                                    </div>
+                                </div>
+                                <div class="reviewAccountsContainer">
+                                    <div class="reviewAccountsContent">
+                                        <p class="reviewAccountsTitle">Review Accounts</p>
+                                    </div>
+                                </div>
+                                <div class="downloadContainer">
+                                    <div class="downloadContent">
+                                        <p class="downloadTitle">Download</p>
+                                    </div>
+                                </div>
+                            </section>
 
-                                <button class="tabBtn" id="1vendorsBtn" onclick="showTab('uploadTab')">Drop Files</button>
-                                <button class="tabBtn" id="1vendorsBtn" onclick="showTab('vendorsTab')">Review Vendors/Payees</button>
-                                <button class="tabBtn" id="1accountsBtn" onclick="showTab('accountsTab')">Review Accounts</button>
-                                <button class="tabBtn" id="1downloadBtn" onclick="showTab('downloadTab')">Download</button>
-                                
-                            </div>
-    
-                          
                             <div class="fileInfoContainer" id="vendorsInfoContainer">
-    
-                                <h1>
-                                    vendors
-                                </h1>
+                                <h1>Vendors</h1>
                             </div>
-                            <button class="nextBtn" style="cursor: pointer;" onclick="nextTab('accountsTab')">Next</button>
-    
+
+                            <div class="bottomButtonContainer">
+                                <button class="nextBtn" style="cursor: pointer;" onclick="nextTab('uploadTab')">Back</button>
+                                <button class="nextBtn" style="cursor: pointer;" onclick="nextTab('accountsTab')">Next</button>
+                            </div>
                         </div>
                     </div>
-    
                 </div>
-    
 
                 <div class="tab-content" id="accountsTab">
                     <div class="mainContentArea" style="--src:url(../assets/955c85f3ebfddff2b6bddc63f824b9ca.svg)">
                         <div class="contentInnerColumn">
-                            <div class="actionButtonsRow">
+                            <section class="tabs fileManagementSection">
+                                <!-- File Management Section -->
+                                <div class="dropFilesContainer">
+                                    <div class="dropFilesContent">
+                                        <p class="dropFilesTitle">Drop Files</p>
+                                    </div>
+                                </div>
+                                <div class="reviewVendorsContainer">
+                                    <div class="reviewVendorsContent">
+                                        <p class="reviewVendorsTitle">Review Vendors/Payees</p>
+                                    </div>
+                                </div>
+                                <div class="reviewAccountsContainer">
+                                    <div class="reviewAccountsContent">
+                                        <p class="reviewAccountsTitle">Review Accounts</p>
+                                        <img class="reviewAccountsIcon" src="./assets/8f1972e24548f05d8bfa6659433140fa.svg" alt="alt text" />
+                                    </div>
+                                </div>
+                                <div class="downloadContainer">
+                                    <div class="downloadContent">
+                                        <p class="downloadTitle">Download</p>
+                                    </div>
+                                </div>
+                            </section>
 
-                                <button class="tabBtn" id="1vendorsBtn" onclick="showTab('uploadTab')">Drop Files</button>
-
-                                <button class="tabBtn" id="1vendorsBtn" onclick="showTab('vendorsTab')">Review Vendors/Payees</button>
-                                <button class="tabBtn" id="1accountsBtn" onclick="showTab('accountsTab')">Review Accounts</button>
-                                <button class="tabBtn" id="1downloadBtn" onclick="showTab('downloadTab')">Download</button>
-                                
-                            </div>
-    
-
-    
-
-    
                             <div class="fileInfoContainer" id="accountsInfoContainer">
-    
-                                <h1>
-                                    accounts
-                                </h1>
+                                <h1>Accounts</h1>
                             </div>
-                            <button class="nextBtn" style="cursor: pointer;" onclick="nextTab('downloadTab')">Next</button>
-    
-                        </div>
+                            <div class="bottomButtonContainer">
+                                <button class="nextBtn" style="cursor: pointer;" onclick="nextTab('vendorsTab')">Back</button>
+                                <button class="nextBtn" style="cursor: pointer;" onclick="nextTab('downloadTab')">Next</button>
+                            </div>                        </div>
                     </div>
-    
                 </div>
 
                 <div class="tab-content" id="downloadTab">
                     <div class="mainContentArea" style="--src:url(../assets/955c85f3ebfddff2b6bddc63f824b9ca.svg)">
                         <div class="contentInnerColumn">
-                            <div class="actionButtonsRow">
+                            <section class="tabs fileManagementSection">
+                                <!-- File Management Section -->
+                                <div class="dropFilesContainer">
+                                    <div class="dropFilesContent">
+                                        <p class="dropFilesTitle">Drop Files</p>
+                                    </div>
+                                </div>
+                                <div class="reviewVendorsContainer">
+                                    <div class="reviewVendorsContent">
+                                        <p class="reviewVendorsTitle">Review Vendors/Payees</p>
+                                    </div>
+                                </div>
+                                <div class="reviewAccountsContainer">
+                                    <div class="reviewAccountsContent">
+                                        <p class="reviewAccountsTitle">Review Accounts</p>
+                                    </div>
+                                </div>
+                                <div class="downloadContainer">
+                                    <div class="downloadContent">
+                                        <p class="downloadTitle">Download</p>
+                                        <img class="downloadIcon" src="./assets/13f45d5990b40af7c96f2633fb510ded.svg" alt="alt text" />
+                                    </div>
+                                </div>
+                            </section>
 
-                                <button class="tabBtn" id="1vendorsBtn" onclick="showTab('uploadTab')">Drop Files</button>
-                                <button class="tabBtn" id="1vendorsBtn" onclick="showTab('vendorsTab')">Review Vendors/Payees</button>
-                                <button class="tabBtn" id="1accountsBtn" onclick="showTab('accountsTab')">Review Accounts</button>
-                                <button class="tabBtn" id="1downloadBtn" onclick="showTab('downloadTab')">Download</button>
-                                
-                            </div>
-    
-                            
-    
                             <div class="fileInfoContainer" id="downloadInfoContainer">
-    
-                                <h1>
-                                    download
-                                </h1>
+                                <h1>Download</h1>
                             </div>
-                            <button class="nextBtn" style="cursor: pointer;" >Download Excel</button>
-                            <button class="nextBtn" style="cursor: pointer;" >Download csv</button>
-
-    
+                            <div class="bottomButtonContainer">
+                                <button class="nextBtn" style="cursor: pointer;" onclick="nextTab('accountsTab')">Back</button>                            
+                                <!-- Dropdown to choose file format -->
+                                <select class="nextBtn" id="fileFormatSelect" style="width: auto;">
+                                    <option value="csv">CSV</option>
+                                    <option value="xlsx">Excel</option>
+                                </select>
+                            
+                                <!-- Unified Download Button -->
+                                <button class="nextBtn" style="cursor: pointer;" id="downloadBtn">Download</button>
+                            </div>
+                            
                         </div>
                     </div>
-    
                 </div>
 
             </div>
@@ -181,4 +230,4 @@
     </script>
 </body>
 
-</html>
+

@@ -1,0 +1,184 @@
+@use "utils" as *;
+@use "global" as *;
+
+.tabs {
+  &.fileManagementSection {
+    display: flex;
+
+    @include sm {
+      flex-direction: column;
+      align-items: center;
+      gap: 30px 0;
+    }
+  }
+
+  .dropFilesContainer {
+    display: flex;
+    flex-direction: column;
+    width: 285px;
+    min-width: 0;
+    max-width: 284.94140625px;
+    background-color: rgb(254 247 255);
+    outline: 1px solid rgb(217 217 217);
+    outline-offset: -1px;
+
+    @include sm {
+      width: 100%;
+      min-width: unset;
+    }
+  }
+
+  .dropFilesContent {
+    display: flex;
+    flex-direction: column;
+    margin: 14px auto 0;
+    width: 64px;
+
+    @include sm {
+      width: 85%;
+    }
+  }
+
+  .dropFilesTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font: 500 14px/1.42 Roboto, Helvetica, Arial, serif;
+    color: rgb(101 85 143);
+    text-align: center;
+    letter-spacing: 0.1px;
+  }
+
+  .dropFilesIcon {
+    width: 64px;
+    object-fit: cover;
+  }
+
+  .reviewVendorsContainer {
+    display: flex;
+    flex-direction: column;
+    width: 284px;
+    min-width: 0;
+    max-width: 283.93359375px;
+    background-color: rgb(254 247 255);
+    outline: 1px solid rgb(217 217 217);
+    outline-offset: -1px;
+
+    @include sm {
+      width: 100%;
+      min-width: unset;
+    }
+  }
+
+  .reviewVendorsContent {
+    display: flex;
+    flex-direction: column;
+    margin: 14px auto 0;
+    width: 153px;
+    max-width: 85%;
+
+    @include sm {
+      width: 85%;
+    }
+  }
+
+  .reviewVendorsTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 1px;
+    font: 500 14px/1.42 Roboto, Helvetica, Arial, serif;
+    color: rgb(101 85 143);
+    text-align: center;
+  }
+
+  .reviewVendorsIcon {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .reviewAccountsContainer {
+    display: flex;
+    flex-direction: column;
+    width: 285px;
+    min-width: 0;
+    max-width: 284.94140625px;
+    background-color: rgb(254 247 255);
+    outline: 1px solid rgb(217 217 217);
+    outline-offset: -1px;
+
+    @include sm {
+      width: 100%;
+      min-width: unset;
+    }
+  }
+
+  .reviewAccountsContent {
+    display: flex;
+    flex-direction: column;
+    margin: 14px auto 0;
+    width: 108.99609375px;
+    max-width: 85%;
+
+    @include sm {
+      width: 85%;
+    }
+  }
+
+  .reviewAccountsTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font: 500 14px/1.42 Roboto, Helvetica, Arial, serif;
+    color: rgb(101 85 143);
+    text-align: center;
+    letter-spacing: 0.1px;
+  }
+
+  .reviewAccountsIcon {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .downloadContainer {
+    display: flex;
+    flex-direction: column;
+    width: 284px;
+    min-width: 0;
+    max-width: 283.93359375px;
+    background-color: rgb(254 247 255);
+    outline: 1px solid rgb(217 217 217);
+    outline-offset: -1px;
+
+    @include sm {
+      width: 100%;
+      min-width: unset;
+    }
+  }
+
+  .downloadContent {
+    display: flex;
+    flex-direction: column;
+    margin: 14px auto 0;
+    width: 64px;
+
+    @include sm {
+      width: 85%;
+    }
+  }
+
+  .downloadTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font: 500 14px/1.42 Roboto, Helvetica, Arial, serif;
+    color: rgb(101 85 143);
+    text-align: center;
+    letter-spacing: 0.1px;
+  }
+
+  .downloadIcon {
+    width: 64px;
+    object-fit: cover;
+  }
+}

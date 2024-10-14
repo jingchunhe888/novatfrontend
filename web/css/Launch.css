@@ -259,6 +259,17 @@
     margin: 0 8px;
   }
 }
+
+.bottomButtonContainer {
+  display: flex;
+  justify-content: flex-end; /* Aligns buttons to the left */
+  align-items: center;
+  flex-direction: row;
+  margin: 5px 5.87% 0 auto; /* Same position as the original Next button */
+  gap:5px;
+}
+
+/* Style for the Next button (remains on the right) */
 .Launch .nextBtn {
   display: flex;
   justify-content: center;
@@ -274,4 +285,181 @@
   padding: 10px 8px;
   outline: 1px solid #65558f;
   outline-offset: -1px;
+}.tabs.fileManagementSection {
+  display: flex;
+}
+@media (max-width: 767px) {
+  .tabs.fileManagementSection {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px 0;
+  }
+}
+.tabs .dropFilesContainer {
+  display: flex;
+  flex-direction: column;
+  width: 285px;
+  min-width: 0;
+  max-width: 284.94140625px;
+  background-color: #fef7ff;
+  outline: 1px solid #d9d9d9;
+  outline-offset: -1px;
+}
+@media (max-width: 767px) {
+  .tabs .dropFilesContainer {
+    width: 100%;
+    min-width: unset;
+  }
+}
+.tabs .dropFilesContent {
+  display: flex;
+  flex-direction: column;
+  margin: 14px auto 0;
+  width: 64px;
+}
+@media (max-width: 767px) {
+  .tabs .dropFilesContent {
+    width: 100%;
+  }
+}
+.tabs .dropFilesTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: 500 14px/1.42 Roboto, Helvetica, Arial, serif;
+  color: #65558f;
+  text-align: center;
+  letter-spacing: 0.1px;
+}
+.tabs .dropFilesIcon {
+  width: 64px;
+  -o-object-fit: cover;
+  object-fit: cover;
+
+}
+
+.tabs .reviewVendorsContainer {
+  display: flex;
+  flex-direction: column;
+  width: 284px;
+  min-width: 0;
+  max-width: 283.93359375px;
+  background-color: #fef7ff;
+  outline: 1px solid #d9d9d9;
+  outline-offset: -1px;
+}
+@media (max-width: 767px) {
+  .tabs .reviewVendorsContainer {
+    width: 100%;
+    min-width: unset;
+  }
+}
+.tabs .reviewVendorsContent {
+  display: flex;
+  flex-direction: column;
+  margin: 14px auto 0;
+  width: 153px;
+  max-width: 85%;
+}
+@media (max-width: 767px) {
+  .tabs .reviewVendorsContent {
+    width: 85%;
+  }
+}
+.tabs .reviewVendorsTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 1px;
+  font: 500 14px/1.42 Roboto, Helvetica, Arial, serif;
+  color: #65558f;
+  text-align: center;
+}
+.tabs .reviewVendorsIcon {
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.tabs .reviewAccountsContainer {
+  display: flex;
+  flex-direction: column;
+  width: 285px;
+  min-width: 0;
+  max-width: 284.94140625px;
+  background-color: #fef7ff;
+  outline: 1px solid #d9d9d9;
+  outline-offset: -1px;
+}
+@media (max-width: 767px) {
+  .tabs .reviewAccountsContainer {
+    width: 100%;
+    min-width: unset;
+  }
+}
+.tabs .reviewAccountsContent {
+  display: flex;
+  flex-direction: column;
+  margin: 14px auto 0;
+  width: 108.99609375px;
+  max-width: 85%;
+}
+@media (max-width: 767px) {
+  .tabs .reviewAccountsContent {
+    width: 85%;
+  }
+}
+.tabs .reviewAccountsTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: 500 14px/1.42 Roboto, Helvetica, Arial, serif;
+  color: #65558f;
+  text-align: center;
+  letter-spacing: 0.1px;
+}
+.tabs .reviewAccountsIcon {
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.tabs .downloadContainer {
+  display: flex;
+  flex-direction: column;
+  width: 284px;
+  min-width: 0;
+  max-width: 283.93359375px;
+  background-color: #fef7ff;
+  outline: 1px solid #d9d9d9;
+  outline-offset: -1px;
+}
+@media (max-width: 767px) {
+  .tabs .downloadContainer {
+    width: 100%;
+    min-width: unset;
+  }
+}
+.tabs .downloadContent {
+  display: flex;
+  flex-direction: column;
+  margin: 14px auto 0;
+  width: 64px;
+}
+@media (max-width: 767px) {
+  .tabs .downloadContent {
+    width: 85%;
+  }
+}
+.tabs .downloadTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: 500 14px/1.42 Roboto, Helvetica, Arial, serif;
+  color: #65558f;
+  text-align: center;
+  letter-spacing: 0.1px;
+}
+.tabs .downloadIcon {
+  width: 64px;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
