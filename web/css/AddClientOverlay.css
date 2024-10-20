@@ -41,6 +41,7 @@
     font: 600 24px/1.2 Inter, Helvetica, Arial, serif;
     color: black;
     letter-spacing: -0.48px;
+    white-space: none
   }
   @media (max-width: 479px) {
     .add-client-overlay .addClientTitle {
@@ -59,8 +60,10 @@
   .add-client-overlay .flex_row1 {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     gap: 0 24px;
   }
+
   @media (max-width: 575px) {
     .add-client-overlay .flex_row1 {
       -moz-column-gap: 16px;
@@ -77,6 +80,8 @@
     display: flex;
     align-items: center;
     flex: 1 1 auto;
+    flex-grow: 1;
+    margin:0;
     font: 400 16px/1.39 Inter, Helvetica, Arial, serif;
     color: black;
   }
@@ -85,10 +90,18 @@
       display: none !important;
     }
   }
+
+  .add-client-overlay .nameNumber {
+    margin: 0 24px 0;
+    text-align: right; /* Align the number to the right */
+}
+
   .add-client-overlay .nameInputImage {
-    width: 492px;
+    width: 100%;
+    max-width:250px;
     -o-object-fit: contain;
     object-fit: contain;
+    flex-shrink: 0; 
   }
   @media (max-width: 575px) {
     .add-client-overlay .nameInputImage {
@@ -162,3 +175,27 @@
     width: 50%;
 }
 
+.add-client-overlay .nameInputField {
+  width: 100%; /* Adjust width as needed */
+  max-width: 492px; /* Ensure it stays the same width as the image */
+  padding: 10px 20px; /* Adjust padding for internal spacing */
+  
+  /* Add background color similar to the image */
+  background-color: #e8e4ec; /* Use the purple color or a similar shade */
+  
+  /* Optional: Add a line or border to mimic the line in the image */
+  border: none; /* Remove default border */
+  border-bottom: 1px solid #000000; /* White line at the bottom to mimic the image */
+  
+  /* Text styling */
+  font-size: 16px; /* Adjust as needed */
+  color: #000000; /* White text color */
+  
+  /* Optional: Additional effects to make it look like the image */
+  border-radius: 4px; /* Smooth corners */
+}
+
+.add-client-overlay .nameInputField::placeholder {
+  color: #000000; /* White placeholder text to match the style */
+  opacity: 0.7; /* Adjust visibility of the placeholder */
+}
