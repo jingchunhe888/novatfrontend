@@ -10,6 +10,9 @@
     <link rel="stylesheet" type="text/css" href="./css/common.css" />
     <link rel="stylesheet" type="text/css" href="./css/fonts.css" />
     <link rel="stylesheet" type="text/css" href="./css/Launch.css" />
+    <link rel="stylesheet" type="text/css" href="./css/Homepage.css" />
+    <link rel="stylesheet" type="text/css" href="./css/AddClientOverlay.css" />
+
 
     <style>
         .tab-content {
@@ -47,6 +50,11 @@
                                             <img class="dropFilesIcon" src="./assets/13f45d5990b40af7c96f2633fb510ded.svg" alt="alt text" />
                                         </div>
                                     </div>
+                                    <div class="dropFilesContainer">
+                                        <div class="dropFilesContent">
+                                            <p class="dropFilesTitle">View</p>
+                                        </div>
+                                    </div>
                                     <div class="reviewVendorsContainer">
                                         <div class="reviewVendorsContent">
                                             <p class="reviewVendorsTitle">Review Vendors/Payees</p>
@@ -75,7 +83,59 @@
                             <div class="fileInfoContainer" id="fileInfoContainer"></div>
                                 <!-- Inside the content area where the Next button is -->
                             <div class="bottomButtonContainer">
-                                <button class="nextBtn" style="cursor: pointer;" id="nextBtn" onclick="nextTab('vendorsTab')">Next</button>
+                                <button class="nextBtn" style="cursor: pointer;" id="nextBtn" onclick="nextTab('viewTab')">Next</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="viewTab">
+                    <div class="mainContentArea" style="--src:url(../assets/955c85f3ebfddff2b6bddc63f824b9ca.svg)">
+                        <div class="contentInnerColumn">
+                            <section class="tabs fileManagementSection">
+                                <!-- File Management Section -->
+                                <div class="dropFilesContainer">
+                                    <div class="dropFilesContent">
+                                        <p class="dropFilesTitle">Drop Files</p>
+                                    </div>
+                                </div>
+                                <div class="reviewVendorsContainer">
+                                    <div class="reviewVendorsContent">
+                                        <p class="reviewVendorsTitle">View</p>
+                                        <img class="downloadIcon" src="./assets/13f45d5990b40af7c96f2633fb510ded.svg" alt="alt text" />
+                                    </div>
+                                </div>
+                                <div class="reviewVendorsContainer">
+                                    <div class="reviewVendorsContent">
+                                        <p class="reviewVendorsTitle">Review Vendors/Payees</p>
+                                    </div>
+                                </div>
+                                <div class="reviewAccountsContainer">
+                                    <div class="reviewAccountsContent">
+                                        <p class="reviewAccountsTitle">Review Accounts</p>
+                                    </div>
+                                </div>
+                                <div class="downloadContainer">
+                                    <div class="downloadContent">
+                                        <p class="downloadTitle">Download</p>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <button class="uploadFilesBtn" style="cursor: pointer;" id="viewSummary">
+                                <!-- <img class="uploadBtnIcon" src="./assets/6cc7b1971c72dcf31f9c2f125024a122.svg" alt="alt text" /> -->
+                                <span class="uploadBtnText"> Summary</span>
+                            </button>
+
+                            <div class="fileInfoContainer" id="vendorsInfoContainer">
+
+                                <h1>Views</h1>
+
+                            </div>
+
+                            <div class="bottomButtonContainer">
+                                <button class="nextBtn" style="cursor: pointer;" onclick="nextTab('uploadTab')">Back</button>
+                                <button class="nextBtn" style="cursor: pointer;" onclick="nextTab('vendorsTab')">Next</button>
                             </div>
                         </div>
                     </div>
@@ -89,6 +149,11 @@
                                 <div class="dropFilesContainer">
                                     <div class="dropFilesContent">
                                         <p class="dropFilesTitle">Drop Files</p>
+                                    </div>
+                                </div>
+                                <div class="dropFilesContainer">
+                                    <div class="dropFilesContent">
+                                        <p class="dropFilesTitle">View</p>
                                     </div>
                                 </div>
                                 <div class="reviewVendorsContainer">
@@ -114,9 +179,9 @@
                             </div>
 
                             <div class="bottomButtonContainer">
-                                <button class="nextBtn" style="cursor: pointer;" onclick="nextTab('uploadTab')">Back</button>
+                                <button class="nextBtn" style="cursor: pointer;" onclick="nextTab('viewTab')">Back</button>
                                 <button class="nextBtn" style="cursor: pointer;" onclick="nextTab('accountsTab')">Next</button>
-                            </div>
+                            </div>                        
                         </div>
                     </div>
                 </div>
@@ -129,6 +194,11 @@
                                 <div class="dropFilesContainer">
                                     <div class="dropFilesContent">
                                         <p class="dropFilesTitle">Drop Files</p>
+                                    </div>
+                                </div>
+                                <div class="dropFilesContainer">
+                                    <div class="dropFilesContent">
+                                        <p class="dropFilesTitle">View</p>
                                     </div>
                                 </div>
                                 <div class="reviewVendorsContainer">
@@ -155,7 +225,8 @@
                             <div class="bottomButtonContainer">
                                 <button class="nextBtn" style="cursor: pointer;" onclick="nextTab('vendorsTab')">Back</button>
                                 <button class="nextBtn" style="cursor: pointer;" onclick="nextTab('downloadTab')">Next</button>
-                            </div>                        </div>
+                            </div>                       
+                        </div>
                     </div>
                 </div>
 
@@ -167,6 +238,12 @@
                                 <div class="dropFilesContainer">
                                     <div class="dropFilesContent">
                                         <p class="dropFilesTitle">Drop Files</p>
+                                    </div>
+                                </div>
+                                <div class="dropFilesContainer">
+                                    <div class="dropFilesContent">
+                                        <p class="dropFilesTitle">View</p>
+                                        <img class="dropFilesIcon"/>
                                     </div>
                                 </div>
                                 <div class="reviewVendorsContainer">
@@ -209,6 +286,43 @@
             </div>
         </div>
     </section>
+
+    <!-- Modal Section for View Summary -->
+<div id="viewSummaryModal" class="add-client-overlay" style="display: none;">
+    <div class="flex_col">
+        <div class="flex_row" style="justify-content: space-between; align-items: center;">
+            <h2 class="addClientTitle">Check Transactions</h2>
+            <img id="closeSummaryButton" class="clientImage" src="./assets/b416a477b5c8506ac22e00a3f8bf0561.svg" alt="Close" style="cursor: pointer;" />
+        </div>
+        <div class="flex_row1">
+            <p class="nameLabel">Number of Transactions</p>
+            <p class="nameNumber">233</p>
+        </div>
+        <div class="flex_row1">
+            <p class="nameLabel">Total Deposits and Additions (+)</p>
+            <p class="nameNumber">233</p>
+        </div>
+        <div class="flex_row1">
+            <p class="nameLabel">Total Withdrawals and Credits (-)</p>
+            <p class="nameNumber">233</p>
+        </div>
+        <div class="flex_row1">
+            <p class="nameLabel">Total Account Change</p>
+            <p class="nameNumber">233</p>
+        </div>
+        <div class="flex_row2">
+            <p class="uploadInstructions">Beginning Balance</p>
+            <input type="text" class="nameInputField" placeholder="Enter Balance" />
+        </div>
+        <div class="flex_row2">
+            <p class="uploadInstructions">Ending Balance</p>
+            <input type="text" class="nameInputField" placeholder="Enter Balance" />
+        </div>
+        <button class="uploadFilesButton">Find Ending Balance</button>
+    </div>
+</div>
+
+   
 
     <script src="../src/js/main.js"></script>
     <script>

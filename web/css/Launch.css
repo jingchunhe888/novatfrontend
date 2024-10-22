@@ -57,7 +57,7 @@
   }
 }
 .Launch .backBtn {
-  z-index: 1;
+  /* z-index: 1; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -158,7 +158,7 @@
 
 
 .Launch .uploadFilesBtn {
-  z-index: 1;
+  /* z-index: 1; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -186,7 +186,7 @@
   text-align: center;
 }
 .Launch .fileInfoContainer {
-  z-index: 1;
+  /* z-index: 1; */
   display: flex;
   flex-direction: column;
   margin: 24px 30px 0;
@@ -242,7 +242,7 @@
   object-fit: cover;
 }
 .Launch .dividerLine {
-  z-index: 1;
+  /* z-index: 1; */
   margin: 0 30px;
   width: 94.67%;
   height: 1px;
@@ -356,6 +356,8 @@
 }
 .tabs .reviewVendorsContent {
   display: flex;
+  align-items:center;
+  justify-content: space-between;
   flex-direction: column;
   margin: 14px auto 0;
   width: 153px;
@@ -462,4 +464,5 @@
   width: 64px;
   -o-object-fit: cover;
   object-fit: cover;
+  
 }
