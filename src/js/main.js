@@ -8,6 +8,9 @@ document.addEventListener("DOMContentLoaded", function () {
     const uploadFilesBtn = document.querySelector(".uploadFilesBtn");
     const fileInfoContainer = document.querySelector(".fileInfoContainer");
     const fileInput = document.getElementById("fileInput");
+    const viewSummary = document.getElementById("viewSummary");
+    const viewSummaryModal = document.getElementById("viewSummaryModal");
+    const closeSummaryButton = document.getElementById("closeSummaryButton");
 
 
     if (uploadFilesBtn) {
@@ -16,8 +19,27 @@ document.addEventListener("DOMContentLoaded", function () {
 
     });
 
+
+
+    // // Show the modal when "Add Client" button is clicked
+    // addClientButton.addEventListener("click", function () {
+    //     addClientModal.style.display = "flex"; // Display the modal
+    // });
+
+    // // Hide the modal when the close button is clicked
+    // closeModalButton.addEventListener("click", function () {
+    //     addClientModal.style.display = "none"; // Hide the modal
+    // });
     
-        
+    
+    viewSummary.addEventListener('click', function() {
+        viewSummaryModal.style.display = "flex";  // Ensure it's flex to match other modal behavior
+    });
+    
+    closeSummaryButton.addEventListener("click", function() {
+        viewSummaryModal.style.display = "none";  // Hide the modal when the close button is clicked
+    });
+
     fileInput.addEventListener('change', function () {
         // Clear the existing content in fileInfoContainer (optional, based on preference)
         fileInfoContainer.innerHTML = '';
